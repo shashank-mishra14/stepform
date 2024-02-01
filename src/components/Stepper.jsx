@@ -1,6 +1,17 @@
-import React from "react";
+import React,{useState, useEffect, useRef} from "react";
 
 const Stepper = ({steps, currentSteps}) => {
+const [newSteps, setNewSteps] = useState([]);
+const stepRef = useRef(newSteps);
+    useEffect(() =>{
+        const stepsState =steps.map((step,index)=>
+        Object.assign({},{
+            description: step,
+            completed: false,
+            highlighted: index ===0 ? true : false,
+            selected: index ===0 ? true : false,
+        }));
+    },[steps, currentSteps]);
 
     const displaySteps = (
         <div  className="w-full flex items-center">
