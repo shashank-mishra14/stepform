@@ -27,6 +27,9 @@ function App() {
         return <Final/>
         default: 
   }
+  const handleClick=(direction)=>{
+
+  }
   return (
     <div className="md:w-1/2 mx-auto shadow-xl rounded-2xl pb-2 bg-white">
       {}
@@ -36,7 +39,12 @@ function App() {
         currentStep={currentStep}/>
       </div>
       {}
-      <StepperController />
+      <StepperController 
+      handleClick={handleClick}
+      currentStep={currentStep}
+      steps={steps}
+      />
+      />
     </div>
   );
 }

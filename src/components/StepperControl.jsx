@@ -1,6 +1,6 @@
 import React from "react";
 
-const StepperControl = () => {
+const StepperControl = (handleClick,currentStep,steps) => {
   return (
     <div className="container flex justify-around mt-4 mb-8"> 
       <button className="bg-white text-slate-400 
