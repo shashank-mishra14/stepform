@@ -3,9 +3,9 @@ import { useState } from "react";
 import Stepper from "./components/Stepper";
 import StepperController from "./components/StepperController";
 import Account from "./components/steps/Account";
-import Details from "./components/steps/Details";;
-import Final from "./components/steps/Final";;
+import Final from "./components/steps/Final";
 import Payment from "./components/steps/Payment";
+import Details from "./components/steps/Details";;
 
 function App() {
 
@@ -44,9 +44,9 @@ function App() {
       currentStep={currentStep}
       steps={steps}
       />
-      />
+      
     </div>
   );
 }
-
+}
 export default App;
