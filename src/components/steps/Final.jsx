@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Final() {
+const Final = () => {
   return (
     <div>Final</div>
   )
 }
+
+export default Final
